@@ -22,6 +22,7 @@ import {
   XLogo,
   YouTube,
 } from "@/components/icons";
+import { siteUrl } from "@/config/metadata";
 
 type SocialPlatform = {
   name: string;
@@ -43,7 +44,7 @@ type SocialPlatform = {
 const SOCIAL_LINKS: SocialPlatform[] = [
   {
     name: "Website",
-    href: "https://www.omsharma.xyz/",
+    href: siteUrl,
     hoverBorderClass: "hover:border-[#2563eb]",
     icon: {
       kind: "image",
@@ -226,7 +227,7 @@ export function SocialLinksSection() {
           <a
             key={platform.name}
             href={platform.href}
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             data-analytics-label={`🌐 ${platform.name} [Link Click]`}
           >
             <div

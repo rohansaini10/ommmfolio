@@ -3,6 +3,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import { appMetadata, jsonLdSchema } from "@/config/metadata";
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
 
 const covikSans = localFont({
@@ -119,7 +120,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const isGlobalAnalyticsEnabled = process.env.NEXT_PUBLIC_ANALYTICS_ENABLED !== "false";
+  const isProduction = process.env.NODE_ENV === "production";
+  const isGlobalAnalyticsEnabled = isProduction && process.env.NEXT_PUBLIC_ANALYTICS_ENABLED !== "false";
   const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
   const umamiWebsiteId = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID;
   const isUmamiScriptEnabled = isGlobalAnalyticsEnabled && process.env.NEXT_PUBLIC_UMAMI_ENABLED !== "false";
@@ -148,6 +150,7 @@ export default function RootLayout({
           process.env.NEXT_PUBLIC_GA_ENABLED !== "false" ? (
           <GoogleAnalytics gaId={gaMeasurementId} />
         ) : null}
+        {isProduction && <Analytics />}
       </body>
     </html>
   );

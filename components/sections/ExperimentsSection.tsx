@@ -194,9 +194,9 @@ export function ExperimentsSection() {
                         <ExpandIcon />
                       </div>
                       <div className="group mx-2 ml-4 flex items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-zinc-600 hover:text-[#333]">
-                        <h3 className="whitespace-nowrap text-xl font-semibold italic ">
+                        <span className="whitespace-nowrap text-xl font-semibold italic">
                           {experiment.title}
-                        </h3>
+                        </span>
                         <ExperimentLogo logo={experiment.logo} />
                       </div>
                     </div>{" "}
@@ -222,7 +222,7 @@ export function ExperimentsSection() {
                           <p className="mb-2 leading-[180%]">{experiment.detail.description}</p>
                           <a
                             href={experiment.detail.href}
-                            target="_blank"
+                            target="_blank" rel="noopener noreferrer"
                             data-analytics-label={experiment.detail.analyticsLabel}
                           >
                             <h4 className="flex w-fit items-center border-b border-dashed border-transparent font-medium italic text-blue-500 transition duration-300 hover:border-blue-500">
@@ -248,7 +248,7 @@ export function ExperimentsSection() {
                           src={experiment.detail.previewImage}
                           className="mb-1 mt-5 aspect-auto h-auto w-full rounded-sm object-contain drop-shadow-lg md:mt-0 md:w-[240px]"
                           width="240"
-                          alt=""
+                          alt={`${experiment.title} preview`}
                         />
                       </div>
                     </div>

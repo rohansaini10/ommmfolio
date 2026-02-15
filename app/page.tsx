@@ -54,7 +54,7 @@ export default function Home() {
             <h3>Built</h3>{" "}
             <a
               href={DATA.featuredProjects.collabydraw.href}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               data-analytics-label="🏆 Collabydraw [Link Click]"
             >
               <div className="group mx-2 flex items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-[#6965db] hover:text-[#333]">
@@ -64,7 +64,7 @@ export default function Home() {
               </div>
             </a>
             <h3>Recognized by </h3>
-            <a href={DATA.highlights[0].url} target="_blank" data-analytics-label="🏆 Excalidraw [Link Click]">
+            <a href={DATA.highlights[0].url} target="_blank" rel="noopener noreferrer" data-analytics-label="🏆 Excalidraw [Link Click]">
               <div className="group mx-2 flex items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-[#6965db] hover:text-[#333]">
                 <h3 className="undefined whitespace-nowrap font-semibold italic">
                   Excalidraw
@@ -72,7 +72,7 @@ export default function Home() {
               </div>
             </a>
             <span>and</span>
-            <a href={DATA.highlights[1].url} target="_blank" data-analytics-label="🏆 Harkirat Singh [Link Click]">
+            <a href={DATA.highlights[1].url} target="_blank" rel="noopener noreferrer" data-analytics-label="🏆 Harkirat Singh [Link Click]">
               <div className="group mx-2 flex items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-[#aaa] hover:text-[#333]">
                 <h3 className="undefined whitespace-nowrap font-semibold italic">
                   Harkirat Singh.
@@ -84,9 +84,9 @@ export default function Home() {
           <div className="mt-3 flex flex-wrap items-start leading-[180%]">
             <h3>Recommended by</h3>{" "}
             <a
-              href={DATA.highlights[0].url}
-              target="_blank"
-              data-analytics-label="🏆 Maker of the year [Link Click]"
+              href={DATA.highlights[2].url}
+              target="_blank" rel="noopener noreferrer"
+              data-analytics-label="🏆 Parth Amin [Link Click]"
             >
               <div className="group mx-2 flex items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-[#1f54c4] hover:text-[#333]">
                 <h3 className="undefined whitespace-nowrap font-semibold italic">
@@ -106,7 +106,7 @@ export default function Home() {
 
           <div className="mt-3 flex flex-wrap items-start leading-[180%]">
             <h3>Won a bounty in </h3>
-            <a href={DATA.highlights[3].url} target="_blank" data-analytics-label="🏆 Solana Hackathon [Link Click]">
+            <a href={DATA.highlights[3].url} target="_blank" rel="noopener noreferrer" data-analytics-label="🏆 Solana Hackathon [Link Click]">
               <div className="group mx-2 flex items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-[#aaa] hover:text-[#333]">
                 <h3 className="undefined whitespace-nowrap font-semibold italic">Solana Hackathon</h3>
               </div>
@@ -117,7 +117,7 @@ export default function Home() {
             <h3 className="mr-2">Major Products:</h3>{" "}
             <a
               href={DATA.featuredProjects.codeClip.href}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               data-analytics-label="🔗 CodeClip [Link Click]"
             >
               <div className="group flex items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-orange-500 hover:text-[#333]">
@@ -134,7 +134,7 @@ export default function Home() {
             <h4 className="mx-2">,</h4>
             <a
               href={DATA.featuredProjects.superGitSight.href}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               data-analytics-label="🔗 SuperGitSight [Link Click]"
             >
               <div className="group flex items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-[#d97757] hover:text-[#333]">
@@ -153,7 +153,7 @@ export default function Home() {
             <h3>have an idea?</h3>{" "}
             <a
               href={`mailto:${DATA.contact.email}`}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               data-analytics-label="📫 Email [Button Click]"
             >
               <div className="group ml-2 flex items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-[#aaa] hover:text-[#333]">
@@ -183,7 +183,7 @@ export default function Home() {
             <h4>Last listened to </h4>
             <a
               href="https://open.spotify.com/track/0KtHnXQjYkHNDsjTX3XqLc"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               data-analytics-label="🎵 Spotify song [Link Click]"
             >
               <div className="group mx-2 flex flex-1! items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-[#aaa] hover:text-[#333]">
@@ -205,7 +205,7 @@ export default function Home() {
             <h4>I share my stuff on </h4>
             <a
               href={DATA.contact.social.X}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               data-analytics-label="🚀 Twitter [Link Click]"
             >
               <div className="group mx-2 flex flex-1! items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-black hover:text-[#333]">
@@ -222,7 +222,7 @@ export default function Home() {
             <h4 className="mr-2">&amp; reels on</h4>
             <a
               href={DATA.contact.social.Instagram}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               data-analytics-label="🚀 Instagram [Link Click]"
             >
               <div className="group flex flex-1! items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-[#E26548] hover:text-[#333]">
@@ -241,7 +241,7 @@ export default function Home() {
             <h4>Schedule a call? </h4>
             <a
               href="https://cal.com/om-sharma/30-min"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               data-analytics-label="📆 Book Call [Button Click]"
             >
               <div className="group ml-2 flex flex-1! items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-black hover:text-[#333]">
@@ -260,7 +260,7 @@ export default function Home() {
             <h4>My resumes for </h4>
             <a
               href={DATA.contact.social.Resume.fullstack}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               data-analytics-label="📄 Full Stack Resume [Link Click]"
             >
               <div className="group mx-2 flex flex-1! items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-black hover:text-[#333]">
@@ -273,7 +273,7 @@ export default function Home() {
             <h4 className="mr-2">&amp; for</h4>
             <a
               href={DATA.contact.social.Resume.shopify}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               data-analytics-label="📄 Shopify Resume [Link Click]"
             >
               <div className="group flex flex-1! items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-[#95bf47] hover:text-[#333]">
@@ -303,12 +303,6 @@ export default function Home() {
 
           <div className="vulf-mono mt-2 flex items-center justify-center text-center text-xs font-medium italic text-zinc-500">
             thanks for visiting
-            <DividerDot />
-            <a href="/analytics" data-analytics-label="📊 Site Analytics [Link Click]">
-              <span className="border-b border-dashed border-zinc-300 transition duration-300 hover:border-blue-400">
-                site analytics
-              </span>
-            </a>
           </div>
         </footer>
       </div>

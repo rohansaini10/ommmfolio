@@ -53,9 +53,9 @@ export function MainQuestsSection() {
                       <ExpandIcon />
                     </div>
                     <div className="group mx-2 ml-4 flex items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-zinc-600 hover:text-[#333]">
-                      <h3 className="whitespace-nowrap text-xl font-semibold italic">
+                      <span className="whitespace-nowrap text-xl font-semibold italic">
                         {chapter.title}
-                      </h3>
+                      </span>
                     </div>
                   </div>
                 </button>

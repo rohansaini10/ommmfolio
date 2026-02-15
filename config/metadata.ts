@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { DATA } from "@/config/data";
 
-const siteUrl = "https://www.omsharma.xyz";
+export const siteUrl = "https://omsharma.xyz";
 const ogImage = "/opengraph-image.png";
+const googleSiteVerification = process.env.GOOGLE_SITE_VERIFICATION?.trim();
 
 const siteTitle = `${DATA.name}`;
 const siteDescription = "Portfolio of Om Sharma, a full stack developer building production-ready web apps, Shopify experiences, and SaaS products.";
@@ -62,6 +63,13 @@ export const appMetadata: Metadata = {
   alternates: {
     canonical: siteUrl,
   },
+  ...(googleSiteVerification
+    ? {
+        verification: {
+          google: googleSiteVerification,
+        },
+      }
+    : {}),
   manifest: "/site.webmanifest",
   icons: {
     icon: [
@@ -95,7 +103,7 @@ export const jsonLdSchema = [
     "@type": "Person",
     name: DATA.name,
     url: siteUrl,
-    image: ogImage,
+    image: `${siteUrl}${ogImage}`,
     email: `mailto:${DATA.contact.email}`,
     jobTitle: "Full Stack Developer",
     description: siteDescription,

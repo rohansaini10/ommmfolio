@@ -215,7 +215,7 @@ export function ProductionWorkSection() {
                         <ExpandIcon />
                       </div>
                       <div className="group mx-2 ml-4 flex items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-zinc-600 hover:text-[#333]">
-                        <h3 className="whitespace-nowrap text-xl font-semibold italic">{store.title}</h3>
+                        <span className="whitespace-nowrap text-xl font-semibold italic">{store.title}</span>
                         <ProjectLogoImage logo={store.logo} />
                       </div>
                     </div>
@@ -240,7 +240,7 @@ export function ProductionWorkSection() {
                         <p className="mb-2 leading-[180%]">{store.summary}</p>
                         <a
                           href={href}
-                          target="_blank"
+                          target="_blank" rel="noopener noreferrer"
                           data-analytics-label={`🏬 ${store.title} [Production Work Click]`}
                         >
                           <h4 className="flex w-fit items-center border-b border-dashed border-transparent font-medium italic text-blue-500 transition duration-300 hover:border-blue-500">
