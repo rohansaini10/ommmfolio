@@ -5,8 +5,8 @@ export const siteUrl = "https://omsharma.xyz";
 const ogImage = "/opengraph-image.png";
 const googleSiteVerification = process.env.GOOGLE_SITE_VERIFICATION?.trim();
 
-const siteTitle = `${DATA.name}`;
-const siteDescription = "Portfolio of Om Sharma, a full stack developer building production-ready web apps, Shopify experiences, and SaaS products.";
+const siteTitle = 'Om Sharma — Shopify & SaaS Full-Stack Developer | Portfolio';
+const siteDescription = "Om Sharma is a full-stack developer building production-ready web apps, Shopify apps, and SaaS products. Explore projects, tools, and work.";
 
 const socialLinks = [
   DATA.contact.social.GitHub,
@@ -36,6 +36,8 @@ export const appMetadata: Metadata = {
     siteName: `${DATA.name} Portfolio`,
     images: [
       {
+        width: 1200,
+        height: 630,
         url: ogImage,
         alt: `${DATA.name} portfolio preview`,
       },
@@ -65,10 +67,10 @@ export const appMetadata: Metadata = {
   },
   ...(googleSiteVerification
     ? {
-        verification: {
-          google: googleSiteVerification,
-        },
-      }
+      verification: {
+        google: googleSiteVerification,
+      },
+    }
     : {}),
   manifest: "/site.webmanifest",
   icons: {

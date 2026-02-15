@@ -651,12 +651,15 @@ export const MAIN_QUEST_CHAPTERS: QuestChapter[] = [
     panelStyleText:
       "--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width); --radix-collapsible-content-height: 258.390625px; --radix-collapsible-content-width: 763.875px;",
     items: [
-      { text: "Move out of home and live independently", status: "done" },
-      { text: "Make min ₹10K in one month for more than 2 months", status: "done" },
-      { text: "Make min ₹20K in one month for more than 6 months", status: "done" },
-      { text: "Make min ₹50K in one month for more than 12 months", status: "done" },
-      { text: "Make min ₹150K in one month for more than 6 months", status: "done" },
-      { text: "Make min ₹200K in one month for more than 12 months", status: "partial" },
+      { text: "Make min ₹50K in one month", status: "done" },
+      { text: "Make min ₹150K in one month", status: "done" },
+      { text: "Make min ₹200K in one month", status: "done" },
+      { text: "Make min ₹500K in one month", status: "todo" },
+      { text: "Retire father from his cooking job", status: "todo" },
+      { text: "Build a home for my family in my village", status: "todo" },
+      { text: "Build a home for my family in Bhilwara, Shirpur", status: "todo" },
+      { text: "Buy a new high end phone to my father", status: "todo" },
+      { text: "Buy a car for my family", status: "todo" },
     ],
   },
   {
@@ -681,6 +684,7 @@ export const MAIN_QUEST_CHAPTERS: QuestChapter[] = [
       { text: "Make first $100 online freelance income", status: "done" },
       { text: "Make first offline freelance income", status: "done" },
       { text: "$1 MRR", status: "todo" },
+      { text: "Start my own Shopify Developer Agency", status: "todo" },
     ],
   },
 ];

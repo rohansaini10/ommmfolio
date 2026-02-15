@@ -13,16 +13,14 @@ import {
   Medium,
   NPM,
   PayPal,
-  ShopifyPortfolio,
+  ShopifyGlyph,
   SuperTeamEarn,
   Telegram,
   Topmate,
   Upwork,
-  Website,
   XLogo,
   YouTube,
 } from "@/components/icons";
-import { siteUrl } from "@/config/metadata";
 
 type SocialPlatform = {
   name: string;
@@ -43,23 +41,13 @@ type SocialPlatform = {
 
 const SOCIAL_LINKS: SocialPlatform[] = [
   {
-    name: "Website",
-    href: siteUrl,
-    hoverBorderClass: "hover:border-[#2563eb]",
-    icon: {
-      kind: "image",
-      src: Website,
-      alt: "Om Sharma website logo",
-    },
-  },
-  {
-    name: "Shopify Portfolio",
+    name: "Shopify Developer Agency",
     href: "https://shopify.omsharma.xyz/",
     hoverBorderClass: "hover:border-[#7ab55c]",
     icon: {
       kind: "image",
-      src: ShopifyPortfolio,
-      alt: "Shopify portfolio logo",
+      src: ShopifyGlyph,
+      alt: "Shopify glyph",
     },
   },
   {
