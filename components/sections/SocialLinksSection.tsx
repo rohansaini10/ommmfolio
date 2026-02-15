@@ -215,7 +215,7 @@ const SOCIAL_LINKS: SocialPlatform[] = [
 
 export function SocialLinksSection() {
   return (
-    <section className="mt-6">
+    <section className="mt-6" data-social-links-section="true">
       <div className="my-5 flex w-full items-center">
         <div className="h-[2px] flex-1 rounded-full bg-[#e9ecef]"></div>
         <h4 className="vulf-mono mx-2 text-sm font-normal italic text-zinc-300">My Socials</h4>
@@ -227,7 +227,7 @@ export function SocialLinksSection() {
             key={platform.name}
             href={platform.href}
             target="_blank"
-            data-umami-event={`🌐 ${platform.name} [Link Click]`}
+            data-analytics-label={`🌐 ${platform.name} [Link Click]`}
           >
             <div
               className={`group flex items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:text-[#333] ${platform.hoverBorderClass}`}

@@ -17,7 +17,7 @@ function QuestStatusMask({ status }: { status: QuestStatus }) {
 
 export function MainQuestsSection() {
   return (
-    <div className="h-full w-full">
+    <div className="h-full w-full" data-main-quests-section="true">
       <SectionHeading title="Main Quests" />
 
       {MAIN_QUEST_CHAPTERS.map((chapter, chapterIndex) => {
@@ -43,6 +43,8 @@ export function MainQuestsSection() {
                   data-state={chapter.isOpen ? "open" : "closed"}
                   data-orientation="vertical"
                   id={triggerId}
+                  data-main-quest-trigger
+                  data-analytics-title={chapter.title}
                   className="[&amp;[data-state=open]&gt;div&gt;div&gt;svg]:rotate-180 group flex flex-1 items-center justify-between py-4 transition-all"
                   data-radix-collection-item=""
                 >

@@ -6,7 +6,7 @@ export interface ExperimentDetail {
   description: string;
   href: string;
   hrefLabel: string;
-  umamiEvent: string;
+  analyticsLabel: string;
   tags: string[];
   previewImage: string;
 }
@@ -43,7 +43,7 @@ function toExperimentDetail(project: Project): ExperimentDetail {
     description: project.summary,
     href,
     hrefLabel: getHrefLabel(href),
-    umamiEvent: `🔗 ${project.title} [Link Click]`,
+    analyticsLabel: `🔗 ${project.title} [Link Click]`,
     tags: project.technologies.slice(0, 3),
     previewImage: project.previewImage,
   };

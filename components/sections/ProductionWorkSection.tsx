@@ -206,6 +206,7 @@ export function ProductionWorkSection() {
                     data-state={isOpen ? "open" : "closed"}
                     data-orientation="vertical"
                     id={triggerId}
+                    data-analytics-title={store.title}
                     className="group flex flex-1 items-center justify-between py-4 transition-all [&[data-state=open]>div>div>svg]:rotate-180"
                     data-radix-collection-item=""
                   >
@@ -240,7 +241,7 @@ export function ProductionWorkSection() {
                         <a
                           href={href}
                           target="_blank"
-                          data-umami-event={`🏬 ${store.title} [Production Work Click]`}
+                          data-analytics-label={`🏬 ${store.title} [Production Work Click]`}
                         >
                           <h4 className="flex w-fit items-center border-b border-dashed border-transparent font-medium italic text-blue-500 transition duration-300 hover:border-blue-500">
                             {getHrefLabel(href)}

@@ -185,6 +185,7 @@ export function ExperimentsSection() {
                     data-state={isOpen ? "open" : "closed"}
                     data-orientation="vertical"
                     id={triggerId}
+                    data-analytics-title={experiment.title}
                     className="group flex flex-1 items-center justify-between py-4 transition-all [&[data-state=open]>div>div>svg]:rotate-180"
                     data-radix-collection-item=""
                   >
@@ -222,7 +223,7 @@ export function ExperimentsSection() {
                           <a
                             href={experiment.detail.href}
                             target="_blank"
-                            data-umami-event={experiment.detail.umamiEvent}
+                            data-analytics-label={experiment.detail.analyticsLabel}
                           >
                             <h4 className="flex w-fit items-center border-b border-dashed border-transparent font-medium italic text-blue-500 transition duration-300 hover:border-blue-500">
                               {experiment.detail.hrefLabel}

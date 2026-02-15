@@ -26,7 +26,20 @@ export default function Home() {
               <h1 className="vulf-mono text-[1.5rem] font-medium italic text-black">Om Sharma</h1>
               <h2>I breath code and ship code in production .</h2>
             </div>
-            <img src="https://i.ibb.co/m56MYLYY/Om-Profile.jpg" alt="Om Profile" className="border-3 border-dashed border-[#e9ecef] rounded-sm object-cover object-top w-[100px] h-[70px]" loading="eager" />
+            <button
+              type="button"
+              aria-label="Profile picture"
+              className="cursor-pointer"
+              data-analytics-event="profile_picture_clicked"
+              data-analytics-properties='{"section":"header","element":"profile_picture"}'
+            >
+              <img
+                src="https://i.ibb.co/m56MYLYY/Om-Profile.jpg"
+                alt="Om Profile"
+                className="border-3 h-[70px] w-[100px] rounded-sm border-dashed border-[#e9ecef] object-cover object-top"
+                loading="eager"
+              />
+            </button>
           </div>
         </header>
 
@@ -42,7 +55,7 @@ export default function Home() {
             <a
               href={DATA.featuredProjects.collabydraw.href}
               target="_blank"
-              data-umami-event="🏆 Collabydraw [Link Click]"
+              data-analytics-label="🏆 Collabydraw [Link Click]"
             >
               <div className="group mx-2 flex items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-[#6965db] hover:text-[#333]">
                 <h3 className="undefined whitespace-nowrap font-semibold italic">
@@ -51,7 +64,7 @@ export default function Home() {
               </div>
             </a>
             <h3>Recognized by </h3>
-            <a href={DATA.highlights[0].url} target="_blank" data-umami-event="🏆 Excalidraw [Link Click]">
+            <a href={DATA.highlights[0].url} target="_blank" data-analytics-label="🏆 Excalidraw [Link Click]">
               <div className="group mx-2 flex items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-[#6965db] hover:text-[#333]">
                 <h3 className="undefined whitespace-nowrap font-semibold italic">
                   Excalidraw
@@ -59,7 +72,7 @@ export default function Home() {
               </div>
             </a>
             <span>and</span>
-            <a href={DATA.highlights[1].url} target="_blank" data-umami-event="🏆 Harkirat Singh [Link Click]">
+            <a href={DATA.highlights[1].url} target="_blank" data-analytics-label="🏆 Harkirat Singh [Link Click]">
               <div className="group mx-2 flex items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-[#aaa] hover:text-[#333]">
                 <h3 className="undefined whitespace-nowrap font-semibold italic">
                   Harkirat Singh.
@@ -73,7 +86,7 @@ export default function Home() {
             <a
               href={DATA.highlights[0].url}
               target="_blank"
-              data-umami-event="🏆 Maker of the year [Link Click]"
+              data-analytics-label="🏆 Maker of the year [Link Click]"
             >
               <div className="group mx-2 flex items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-[#1f54c4] hover:text-[#333]">
                 <h3 className="undefined whitespace-nowrap font-semibold italic">
@@ -93,7 +106,7 @@ export default function Home() {
 
           <div className="mt-3 flex flex-wrap items-start leading-[180%]">
             <h3>Won a bounty in </h3>
-            <a href={DATA.highlights[3].url} target="_blank" data-umami-event="🏆 Solana Hackathon [Link Click]">
+            <a href={DATA.highlights[3].url} target="_blank" data-analytics-label="🏆 Solana Hackathon [Link Click]">
               <div className="group mx-2 flex items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-[#aaa] hover:text-[#333]">
                 <h3 className="undefined whitespace-nowrap font-semibold italic">Solana Hackathon</h3>
               </div>
@@ -105,7 +118,7 @@ export default function Home() {
             <a
               href={DATA.featuredProjects.codeClip.href}
               target="_blank"
-              data-umami-event="🔗 CodeClip [Link Click]"
+              data-analytics-label="🔗 CodeClip [Link Click]"
             >
               <div className="group flex items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-orange-500 hover:text-[#333]">
                 <h3 className="undefined whitespace-nowrap font-semibold italic">CodeClip</h3>
@@ -122,7 +135,7 @@ export default function Home() {
             <a
               href={DATA.featuredProjects.superGitSight.href}
               target="_blank"
-              data-umami-event="🔗 SuperGitSight [Link Click]"
+              data-analytics-label="🔗 SuperGitSight [Link Click]"
             >
               <div className="group flex items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-[#d97757] hover:text-[#333]">
                 <h3 className="undefined whitespace-nowrap font-semibold italic">SuperGitSight</h3>
@@ -141,7 +154,7 @@ export default function Home() {
             <a
               href={`mailto:${DATA.contact.email}`}
               target="_blank"
-              data-umami-event="📫 Email [Button Click]"
+              data-analytics-label="📫 Email [Button Click]"
             >
               <div className="group ml-2 flex items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-[#aaa] hover:text-[#333]">
                 <h3 className="whitespace-nowrap font-semibold">{DATA.contact.email}</h3>
@@ -171,7 +184,7 @@ export default function Home() {
             <a
               href="https://open.spotify.com/track/0KtHnXQjYkHNDsjTX3XqLc"
               target="_blank"
-              data-umami-event="🎵 Spotify song [Link Click]"
+              data-analytics-label="🎵 Spotify song [Link Click]"
             >
               <div className="group mx-2 flex flex-1! items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-[#aaa] hover:text-[#333]">
                 <h3 className="undefined whitespace-nowrap font-semibold italic">
@@ -193,7 +206,7 @@ export default function Home() {
             <a
               href={DATA.contact.social.X}
               target="_blank"
-              data-umami-event="🚀 Twitter [Link Click]"
+              data-analytics-label="🚀 Twitter [Link Click]"
             >
               <div className="group mx-2 flex flex-1! items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-black hover:text-[#333]">
                 <h3 className="undefined whitespace-nowrap font-semibold italic">Twitter / X</h3>
@@ -210,7 +223,7 @@ export default function Home() {
             <a
               href={DATA.contact.social.Instagram}
               target="_blank"
-              data-umami-event="🚀 Instagram [Link Click]"
+              data-analytics-label="🚀 Instagram [Link Click]"
             >
               <div className="group flex flex-1! items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-[#E26548] hover:text-[#333]">
                 <h3 className="undefined whitespace-nowrap font-semibold italic">Instagram</h3>
@@ -229,7 +242,7 @@ export default function Home() {
             <a
               href="https://cal.com/om-sharma/30-min"
               target="_blank"
-              data-umami-event="📆 Book Call [Button Click]"
+              data-analytics-label="📆 Book Call [Button Click]"
             >
               <div className="group ml-2 flex flex-1! items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-black hover:text-[#333]">
                 <h3 className="undefined whitespace-nowrap font-semibold italic">Calendar</h3>
@@ -248,7 +261,7 @@ export default function Home() {
             <a
               href={DATA.contact.social.Resume.fullstack}
               target="_blank"
-              data-umami-event="📄 Full Stack Resume [Link Click]"
+              data-analytics-label="📄 Full Stack Resume [Link Click]"
             >
               <div className="group mx-2 flex flex-1! items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-black hover:text-[#333]">
                 <h3 className="undefined whitespace-nowrap font-semibold italic">Full Stack</h3>
@@ -261,7 +274,7 @@ export default function Home() {
             <a
               href={DATA.contact.social.Resume.shopify}
               target="_blank"
-              data-umami-event="📄 Shopify Resume [Link Click]"
+              data-analytics-label="📄 Shopify Resume [Link Click]"
             >
               <div className="group flex flex-1! items-center border-b-2 border-dashed border-[#e9ecef] text-black transition duration-300 hover:border-[#95bf47] hover:text-[#333]">
                 <h3 className="undefined whitespace-nowrap font-semibold italic">Shopify</h3>
@@ -291,7 +304,7 @@ export default function Home() {
           <div className="vulf-mono mt-2 flex items-center justify-center text-center text-xs font-medium italic text-zinc-500">
             thanks for visiting
             <DividerDot />
-            <a href="/analytics">
+            <a href="/analytics" data-analytics-label="📊 Site Analytics [Link Click]">
               <span className="border-b border-dashed border-zinc-300 transition duration-300 hover:border-blue-400">
                 site analytics
               </span>

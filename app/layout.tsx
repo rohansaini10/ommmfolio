@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -120,15 +121,31 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const isGlobalAnalyticsEnabled = process.env.NEXT_PUBLIC_ANALYTICS_ENABLED !== "false";
+  const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
+  const umamiWebsiteId = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID
+  const isUmamiScriptEnabled = isGlobalAnalyticsEnabled && process.env.NEXT_PUBLIC_UMAMI_ENABLED !== "false";
+
   return (
     <html lang="en">
       <head>
-        <script defer src="https://cloud.umami.is/script.js" data-website-id="b9786dbb-9954-42bb-a6d6-09ffb714c66f"></script>
+        {isUmamiScriptEnabled ? (
+          <script
+            defer
+            src="https://cloud.umami.is/script.js"
+            data-website-id={umamiWebsiteId}
+          ></script>
+        ) : null}
       </head>
       <body
         className={`${covikSans.variable} ${geistMono.variable} ${vulfMono.variable} antialiased`}
       >
         {children}
+        {isGlobalAnalyticsEnabled &&
+          gaMeasurementId && gaMeasurementId.length > 0 &&
+          process.env.NEXT_PUBLIC_GA_ENABLED !== "false" ? (
+          <GoogleAnalytics gaId={gaMeasurementId} />
+        ) : null}
       </body>
     </html>
   );
