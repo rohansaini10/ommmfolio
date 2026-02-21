@@ -24,7 +24,7 @@ export default function Home() {
           <div className="flex">
             <div className="flex-1">
               <h1 className="vulf-mono text-[1.5rem] font-medium italic text-black">Om Sharma</h1>
-              <h2>I breath code and ship code in production .</h2>
+              <h2>I breathe code and ship code in production.</h2>
             </div>
             <button
               type="button"
@@ -150,7 +150,7 @@ export default function Home() {
             </a>
           </div>
           <div className="mt-3 flex flex-wrap items-start leading-[180%]">
-            <h3>have an idea?</h3>{" "}
+            <h3>Have an idea?</h3>{" "}
             <a
               href={`mailto:${DATA.contact.email}`}
               target="_blank" rel="noopener noreferrer"
@@ -163,7 +163,7 @@ export default function Home() {
           </div>
           <div className="my-5 flex w-full items-center">
             <div className="h-[2px] flex-1 rounded-full bg-[#e9ecef]"></div>
-            <h4 className="vulf-mono mx-2 text-sm font-normal italic text-zinc-300">Me Info</h4>
+            <h4 className="vulf-mono mx-2 text-sm font-normal italic text-zinc-300">My Info</h4>
             <div className="h-[2px] w-[5%] rounded-full bg-[#e9ecef]"></div>
           </div>
           <div className="flex flex-wrap items-center leading-[180%]">
