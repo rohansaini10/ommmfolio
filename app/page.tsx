@@ -15,6 +15,7 @@ import { SocialLinksSection } from "@/components/sections/SocialLinksSection";
 import { DATA } from "@/config/data";
 import { CurrentTime } from "@/components/current-time";
 import { getAgeText } from "@/lib/age";
+import { BlogsSection } from "@/components/sections/BlogsSection";
 
 export default function Home() {
   return (
@@ -288,6 +289,7 @@ export default function Home() {
               </div>
             </a>
           </div>
+          <BlogsSection />
           <ExperimentsSection />
           <ProductionWorkSection />
           <MainQuestsSection />
