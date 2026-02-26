@@ -5,7 +5,6 @@ import { getAllBlogSlugs, getBlogPost, formatDate } from "@/lib/blog";
 import { processMarkdown } from "@/lib/markdown";
 import { BlogProse } from "../_components/BlogProse";
 import { TableOfContents } from "../_components/TableOfContents";
-import Image from "next/image";
 
 // ─── ISR ──────────────────────────────────────────────────────────────────────
 export const revalidate = 86400;
@@ -111,13 +110,13 @@ export default async function BlogPostPage({
           {/* Cover image */}
           {post.cover && (
             <div className="mb-10 overflow-hidden rounded-lg border border-[#e9e9e7]">
-              <Image
+              <img
                 src={post.cover}
                 alt={post.title}
-                width={1200}
-                height={630}
+                width="100%"
+                height="100%"
                 className="w-full object-cover"
-                priority
+                loading="eager"
               />
             </div>
           )}

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { getAllBlogMeta, formatDate } from "@/lib/blog";
 
 // ─── ISR: revalidate every 60 seconds ────────────────────────────────────────
@@ -47,12 +46,13 @@ export default function BlogIndexPage() {
                 {post.cover && (
                   <Link href={`/blog/${post.slug}`} className="shrink-0 mt-1">
                     <div className="overflow-hidden rounded-md border border-[#e9e9e7] w-full md:w-[240px] h-auto md:h-[136px]">
-                      <Image
+                      <img
                         src={post.cover}
                         alt={post.title}
-                        width={240}
-                        height={136}
+                        width="100%"
+                        height="100%"
                         className="w-full h-full object-cover transition-opacity hover:opacity-80"
+                        loading="eager"
                       />
                     </div>
                   </Link>
