@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllBlogMeta, formatDate } from "@/lib/blog";
 
-// ─── ISR: revalidate every 60 seconds ────────────────────────────────────────
-export const revalidate = 60;
+// ─── ISR: revalidate every 12 hours ────────────────────────────────────────
+export const revalidate = 43200;
 
 // ─── SEO ──────────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Thoughts on software, engineering, and building things.",
+  description: "Thoughts on software, engineering, and building life.",
 };
 
 // ─── Page ─────────────────────────────────────────────────────────────────────

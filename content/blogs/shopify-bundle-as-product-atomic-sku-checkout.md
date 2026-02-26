@@ -3,7 +3,7 @@ title: "Building a Robust Reversible Bundle Transformation Engine in Shopify"
 description: "How I solved the three-way conflict between merchandising UX, operations accuracy, and checkout correctness — without a backend service or third-party app."
 date: "2025-02-01"
 tags: ["Shopify", "Ecommerce","Performance Engineering"]
-cover: "https://i.ibb.co/bgP4sX0B/custom-bundle-banner.png"
+cover: "https://i.ibb.co/0Vv0BrFH/custom-bundle-banner.png"
 ---
 
 ## The Problem No One Tells You About Bundles

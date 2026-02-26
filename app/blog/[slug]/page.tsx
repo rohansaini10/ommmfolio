@@ -6,7 +6,7 @@ import { processMarkdown } from "@/lib/markdown";
 import { BlogProse } from "../_components/BlogProse";
 import { TableOfContents } from "../_components/TableOfContents";
 
-// ─── ISR ──────────────────────────────────────────────────────────────────────
+// ─── ISR: revalidate every 24 hours ────────────────────────────────────────
 export const revalidate = 86400;
 
 // ─── Static params ────────────────────────────────────────────────────────────
