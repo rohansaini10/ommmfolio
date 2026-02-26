@@ -1,0 +1,139 @@
+/*
+  rehype-pretty-code styles — Notion aesthetic
+  Auto-imported via blog/layout.tsx
+*/
+
+/* ── Inline code — no border, subtle grey bg ─────────────────────────────────── */
+:not(pre) > code {
+  border: none !important;
+  box-shadow: none !important;
+  background: #f1f0ef !important;
+  color: #37352f !important;
+  font-size: 0.85em;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+/* ── Inline code figures (single backtick wrapped by rehype-pretty-code) ──────── */
+[data-rehype-pretty-code-figure]:not(:has(pre)) {
+  display: inline;
+  background: none !important;
+  border: none !important;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+[data-rehype-pretty-code-figure]:not(:has(pre)) code {
+  background: #f1f0ef !important;
+  color: #37352f !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 3px;
+  padding: 2px 5px;
+  font-size: 0.85em;
+  font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+
+/* ── Block code figure (triple backtick) ────────────────────────────────────── */
+[data-rehype-pretty-code-figure]:has(pre) {
+  position: relative;
+  margin: 1.25rem 0;
+  border-radius: 6px;
+  background: #f7f6f3;
+  border: 1px solid #e9e9e7;
+  overflow: hidden;
+}
+
+/* ── Language / filename label ───────────────────────────────────────────────── */
+[data-rehype-pretty-code-title] {
+  display: block;
+  padding: 8px 14px 6px;
+  font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #9b9a97;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #e9e9e7;
+  background: #f7f6f3;
+  user-select: none;
+}
+
+/* ── The <pre> itself ────────────────────────────────────────────────────────── */
+[data-rehype-pretty-code-figure] pre {
+  margin: 0;
+  padding: 14px 16px;
+  overflow-x: auto;
+  background: #f7f6f3 !important;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  border: none;
+  border-radius: 0;
+}
+
+/* ── Token text color preserved, bg stripped from Shiki ─────────────────────── */
+[data-rehype-pretty-code-figure] pre > code {
+  display: block;
+  font-family: ui-monospace, "SFMono-Regular", Menlo, "Cascadia Code", monospace;
+  background: transparent !important;
+  color: inherit;
+  font-size: inherit;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* Strip per-span backgrounds Shiki injects — keep only text colors */
+[data-rehype-pretty-code-figure] pre span {
+  background-color: transparent !important;
+}
+
+/* ── Line highlight ──────────────────────────────────────────────────────────── */
+[data-highlighted-line] {
+  background-color: rgba(55, 53, 47, 0.06);
+  border-left: 2px solid #37352f;
+  margin-left: -16px;
+  padding-left: 14px;
+  margin-right: -16px;
+  padding-right: 16px;
+  display: block;
+}
+
+/* ── Word / char highlight ───────────────────────────────────────────────────── */
+[data-highlighted-chars] {
+  background-color: rgba(235, 87, 87, 0.1);
+  border-radius: 3px;
+  padding: 1px 3px;
+}
+
+/* ── Line numbers ────────────────────────────────────────────────────────────── */
+code[data-line-numbers] {
+  counter-reset: line;
+}
+
+code[data-line-numbers] > [data-line]::before {
+  counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  width: 1.2rem;
+  margin-right: 1.5rem;
+  text-align: right;
+  color: #9b9a97;
+  font-size: 0.8em;
+  user-select: none;
+}
+
+/* ── Scrollbar — subtle ──────────────────────────────────────────────────────── */
+[data-rehype-pretty-code-figure] pre::-webkit-scrollbar {
+  height: 5px;
+}
+
+[data-rehype-pretty-code-figure] pre::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+[data-rehype-pretty-code-figure] pre::-webkit-scrollbar-thumb {
+  background: #d3d1cb;
+  border-radius: 99px;
+}
