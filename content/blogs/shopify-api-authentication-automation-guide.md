@@ -1,5 +1,5 @@
 ---
-title: "What Nobody Tells You About the Shopify Admin API"
+title: "🛍 ️I Spent More Time Fighting Shopify’s Auth Than Writing the Actual Script So Here’s Everything I Learned"
 description: "First-person walkthrough of DNS hijacking, Shopify app setup, OAuth tokens, and why Client Secret ≠ Access Token — for any Shopify automation."
 date: "2024-02-01"
 tags: ["Shopify", "API Authentication", "Node.js", "Web Development", "Developer Experience"]
