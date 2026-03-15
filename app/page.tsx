@@ -35,7 +35,7 @@ export default function Home() {
               data-analytics-properties='{"section":"header","element":"profile_picture"}'
             >
               <img
-                src="https://i.ibb.co/m56MYLYY/Om-Profile.jpg"
+                src="https://i.ibb.co/xKZ6pZ0M/Whats-App-Image-2026-03-15-at-1-53-23-PM-1.jpg"
                 alt="Om Profile"
                 className="border-3 h-[70px] w-[100px] rounded-sm border-dashed border-[#e9ecef] object-cover object-top"
                 loading="eager"
