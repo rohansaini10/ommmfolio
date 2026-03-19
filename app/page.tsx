@@ -231,7 +231,7 @@ export default function Home() {
                 <img
                   src={InstagramLogo}
                   alt="Instagram Logo"
-                  className="undefined ml-2"
+                  className="ml-2 rounded"
                   height="22"
                   width="22"
                 />

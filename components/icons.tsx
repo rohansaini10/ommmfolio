@@ -343,7 +343,7 @@ const Topmate = 'https://pbs.twimg.com/profile_images/1933129250087059456/xo8NME
 const Website = 'https://www.google.com/s2/favicons?sz=64&domain_url=omsharma.xyz'
 const ShopifyPortfolio = 'https://www.google.com/s2/favicons?sz=64&domain_url=shopify.omsharma.xyz'
 const XLogo = 'https://img.freepik.com/premium-vector/new-twitter-logo-x-2023-twitter-x-logo-vector-download_691560-10794.jpg?w=360'
-const InstagramLogo = 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png'
+const InstagramLogo = 'https://play-lh.googleusercontent.com/VRMWkE5p3CkWhJs6nv-9ZsLAs1QOg5ob1_3qg-rckwYW7yp1fMrYZqnEFpk0IoVP4LM=s48-rw'
 const Cal = 'https://cal.com/android-chrome-512x512.png'
 const Upwork = 'https://www.google.com/s2/favicons?sz=64&domain_url=upwork.com'
 const Fiverr = 'https://www.google.com/s2/favicons?sz=64&domain_url=fiverr.com'
